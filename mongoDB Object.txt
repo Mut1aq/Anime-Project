@@ -1,0 +1,118 @@
+
+const admin = {
+    _id: "Auto generated id from mongoDB",
+    email: "Admin@Anime.com",
+    password: "Hashed Password using Bcrypt.js",
+    firstName: "Mutlaq",
+    lastName: "Alsadeed",
+    privilege: 'Create Observer / Create Admin / Block User',
+    observers: [
+        {
+            _id: "This will be an array of observers that the admin added"
+        }
+    ],
+    admins: [
+        {
+            _id: "This will be an array of admins that the admin added"
+        }
+    ],
+
+}
+const observer = {
+    _id: "Auto generated id from mongoDB",
+    email: "Observer@Anime.com",
+    password: "Hashed Password using Bcrypt.js",
+    firstName: "Mutlaq",
+    lastName: "Alsadeed",
+    deletedPosts: [
+        {
+            _id: "ID of the deleted post",
+            reason: "deletion reason"
+        }
+    ],
+    deletedComments: [
+        {
+            _id: "ID of the deleted comment",
+            reason: "deletion reason"
+        }
+    ],
+    reportedUsers: [
+        {
+            _id: "ID of the reported User",
+            reason: "report reason"
+        }
+    ],
+    blockedUsers: [
+        {
+            _id: "ID of the blocked User",
+        }
+    ]
+
+}
+const comment = {
+    _id: "Auto generated id from mongoDB",
+    author: "ID who reference the author of the comment",
+    text: "Comment text",
+    likes: [
+        {
+            _id: "ID of the user who liked",
+            amount: 522,
+        }
+    ],
+    comments: [
+        {
+            _id: "ID of the comment",
+        }
+    ],
+
+}
+const post = {
+    _id: "Auto generated id from mongoDB",
+    author: "ID who reference the author of the post",
+    text: "Post text",
+    imageUrl: "The stored urls will be on a cloud database",
+    videoUrl: "The stored urls will be on a cloud database",
+    likes: [
+        {
+            _id: "ID of the user who liked",
+            amount: 522,
+        }
+    ],
+    comments: [
+        {
+            _id: "ID of the comment",
+        }
+    ],
+
+}
+const user = {
+    _id: "Auto generated id from mongoDB",
+    username: "FakeAccount",
+    email: "User@Anime.com",
+    password: "Hashed Password using Bcrypt.js",
+    firstName: "Mutlaq",
+    lastName: "Alsadeed",
+    birthday: "7/12/2000",
+    phoneNumber: "0795367929",
+    followers: [
+        {
+            _id: "ID of the user who followed the logged user",
+        }
+    ],
+    following: [
+        {
+            _id: "ID of the user who is followed by the logged user",
+        }
+    ],
+    comments: [
+        {
+            _id: "ID of the comment",
+        }
+    ],
+    posts: [
+        {
+            _id: "ID of the posts by the logged user",
+        }
+    ],
+
+}
